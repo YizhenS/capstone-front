@@ -1,0 +1,18 @@
+.scroller {
+	margin: 0 auto;
+	
+  height: 300px;
+  width: 70%;
+	
+	background: rgba(125, 130, 146, 0.8);
+border-radius: 30px;
+overflow-y: scroll;
+
+}
+.scroller::-webkit-scrollbar { width: 0 !important }
+.console{
+	padding-top:2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-bottom: 3%;
+}
