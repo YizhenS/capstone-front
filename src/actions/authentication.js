@@ -5,6 +5,9 @@ import { GET_ERRORS, SET_CURRENT_USER } from './types';
 import setAuthToken from '../setAuthToken';
 import jwt_decode from 'jwt-decode';
 
+
+
+//axios.defaults.proxy.host = "http://www.classroom-lookout.com"
 export const registerUser = (user, history) => dispatch => {
     axios.post('/api/users/register', user)
             .then(res => history.push('/login'))
