@@ -9,7 +9,8 @@ import { withRouter } from 'react-router-dom';
 import Map from './Map';
 import About from './About';
 import Console from './Console'
-import data from '../FakeData/data.txt'
+
+
 
 
 
@@ -17,35 +18,12 @@ class Home extends Component {
 	constructor() {
 		super();
 		this.state = {
-			room: {
-				"room1": { "attack": Boolean, "time": "" },
-				"room2": { "attack": Boolean, "time": "" },
-				"room3": { "attack": Boolean, "time": "" },
-				"room4": { "attack": Boolean, "time": "" },
-				"room5": { "attack": Boolean, "time": "" },
-			},
-			console: []
+			
 		}
 
 	}
 
-	readTextFile = file => {
-		var rawFile = new XMLHttpRequest();
-		rawFile.open("GET", file, false);
-		rawFile.onreadystatechange = () => {
-			if (rawFile.readyState === 4) {
-				if (rawFile.status === 200 || rawFile.status == 0) {
-					var allText = rawFile.responseText;
-
-					this.setState({
-						rawData: allText
-					});
-				}
-			}
-		};
-		rawFile.send(null);
-	};
-
+	
 	setRoom(){
 		console.log(this.state.rawData)
 	}
@@ -57,6 +35,14 @@ class Home extends Component {
 	}
 	addConsole() {
 		this.setState({ console: this.state.console.concat[Date()] })
+	}
+	fetchData(){
+		fetch("http://127.0.0.1:5000/")
+    .then(response=> response.json())
+		.then(myJson=> 
+				this.setState({
+		rawData:myJson
+	}))
 	}
 
 	componentWillMount() {
@@ -75,19 +61,22 @@ class Home extends Component {
 		this.setState({ console: this.state.console.concat[Date()] })
 	}
 	componentWillMount() {
-		this.readTextFile(data);
-		console.log(this.state)
+		this.fetchData();
+		//console.log(this.state)
 	}
 	componentDidMount(){
 		console.log(this.setRoom())
+		this.interval = setInterval(() => this.fetchData(), 1000);
+	
 	}
+
 	render() {
-		console.log(this.state)
+		//console.log(this.state)
 		
 		return (
 
 			<div>
-				{!this.props.auth.user.name ? <div><Map /> <Console room={this.state.rawData} /></div> : <About />}
+				{!this.props.auth.user.name ? <div><Map room={this.state.rawData} /> <Console room={this.state.rawData} /></div> : <About />}
 			</div>
 		);
 	}

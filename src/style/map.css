@@ -1,5 +1,315 @@
 .map{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin-left: 10%;
+}
+.map>img{
 	height: 75%;
 	width: 75%;
-	margin-left: 10%;
+}
+.room1_box{
+	position: absolute;
+	top: 38%;
+	left: 12.5%;
+	height: 4%;
+	width: 3%;
+	background: rgba(255, 0, 0, 0.753);
+	z-index: 10;
+	-webkit-animation: flash 1s 10;  /* Safari 4+ */
+  -moz-animation: flash 1s 10;  /* Fx 5+ */
+  -o-animation: flash 1s 10;  /* Opera 12+ */
+  animation: flash 1s 10;  /* IE 10+, Fx 29+ */
+}
+.room2_box{
+	position: absolute;
+	top: 27%;
+	left: 9.5%;
+	height: 4%;
+	width: 5%;
+	background: rgba(255, 0, 0, 0.753);
+	z-index: 10;
+	-webkit-animation: flash 1s 10;  /* Safari 4+ */
+  -moz-animation: flash 1s 10;  /* Fx 5+ */
+  -o-animation: flash 1s 10;  /* Opera 12+ */
+  animation: flash 1s 10;  /* IE 10+, Fx 29+ */
+}
+.room1_round{
+	position: absolute;
+	border-radius: 50%;
+	top: 26%;
+  left: 5.5%;
+  height: 27%;
+  width: 11%;
+	background: rgba(255, 255, 0, 0.76);
+}
+.room3_box{
+	position: absolute;
+	top: 32%;
+	left: 24%;
+	height: 9%;
+	width: 4%;
+	background: rgba(255, 0, 0, 0.753);
+	z-index: 10;
+	-webkit-animation: flash 1s 10;  /* Safari 4+ */
+  -moz-animation: flash 1s 10;  /* Fx 5+ */
+  -o-animation: flash 1s 10;  /* Opera 12+ */
+  animation: flash 1s 10;  /* IE 10+, Fx 29+ */
+}
+.room3_round{
+	position: absolute;
+	border-radius: 50%;
+	top: 21%;
+	left: 20%;
+	height: 30%;
+	width: 12%;
+	background: rgba(255, 255, 0, 0.76);
+}
+.room4_box{
+	position: absolute;
+	bottom: 18%;
+	right: 48.5%;
+	height: 12%;
+	width: 6.5%;
+	background: rgba(255, 0, 0, 0.753);
+	z-index: 10;
+	-webkit-animation: flash 1s 10;  /* Safari 4+ */
+  -moz-animation: flash 1s 10;  /* Fx 5+ */
+  -o-animation: flash 1s 10;  /* Opera 12+ */
+  animation: flash 1s 10;  /* IE 10+, Fx 29+ */
+}
+.room4_round{
+	position: absolute;
+	border-radius: 50%;
+	bottom: 14%;
+	left: 42%;
+	height: 33%;
+	width: 13%;
+	background: rgba(255, 255, 0, 0.76);
+	
+}
+.room5_box{
+	position: absolute;
+	bottom: 39%;
+	right: 28.8%;
+	height: 4%;
+	width: 2%;
+	background: rgba(255, 0, 0, 0.753);
+	z-index: 10;
+	-webkit-animation: flash 1s 10;  /* Safari 4+ */
+  -moz-animation: flash 1s 10;  /* Fx 5+ */
+  -o-animation: flash 1s 10;  /* Opera 12+ */
+  animation: flash 1s 10;  /* IE 10+, Fx 29+ */
+}
+.room5_round{
+	position: absolute;
+	border-radius: 50%;
+	bottom: 22%;
+	right: 28%;
+	height: 33%;
+	width: 13%;
+	background: rgba(255, 255, 0, 0.76);
+}
+.door1{
+	position: absolute;
+	top: 19%;
+	left: 15.5%;
+	height: 5%;
+	width: 4%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door2{
+	position: absolute;
+	top: 23%;
+	left: 21.5%;
+	height: 5%;
+	width: 4%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door3{
+	position: absolute;
+	top: 21%;
+	left: 42.7%;
+	height: 7%;
+	width: 5%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door6{
+	position: absolute;
+	top: 4%;
+	left: 10.7%;
+	height: 7%;
+	width: 5%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door7{
+	position: absolute;
+	top: 21%;
+	left: 59.7%;
+	height: 7%;
+	width: 5%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door9{
+	position: absolute;
+	top: 53%;
+	right: 26.7%;
+	height: 7%;
+	width: 2%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door10{
+	position: absolute;
+	bottom: 8%;
+	right: 26.7%;
+	height: 11%;
+	width: 2%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door12{
+	position: absolute;
+	bottom: 3%;
+	right: 38.7%;
+	height: 7%;
+	width: 3%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door13{
+	position: absolute;
+	bottom: 3%;
+	right: 49.7%;
+	height: 7%;
+	width: 3%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door14{
+	position: absolute;
+	bottom: 3%;
+	right: 63%;
+	height: 7%;
+	width: 3%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door15{
+	position: absolute;
+	bottom: 3%;
+	right: 75%;
+	height: 7%;
+	width: 3%;
+	background: rgba(0, 0, 255, 0.582);
+}
+.door16{
+	position: absolute;
+	bottom: 16%;
+	right: 82%;
+	height: 7%;
+	width: 3%;
+	background:rgba(0, 0, 255, 0.582);
+}
+.door1-enter{
+	position: absolute;
+	top: 19%;
+	left: 15.5%;
+	height: 5%;
+	width: 4%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door2-enter{
+	position: absolute;
+	top: 23%;
+	left: 21.5%;
+	height: 5%;
+	width: 4%;
+	background:rgba(255, 0, 0, 0.753);
+}
+.door3-enter{
+	position: absolute;
+	top: 21%;
+	left: 42.7%;
+	height: 7%;
+	width: 5%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door6-enter{
+	position: absolute;
+	top: 4%;
+	left: 10.7%;
+	height: 7%;
+	width: 5%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door7-enter{
+	position: absolute;
+	top: 21%;
+	left: 59.7%;
+	height: 7%;
+	width: 5%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door9-enter{
+	position: absolute;
+	top: 53%;
+	right: 26.7%;
+	height: 7%;
+	width: 2%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door10-enter{
+	position: absolute;
+	bottom: 8%;
+	right: 26.7%;
+	height: 11%;
+	width: 2%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door12-enter{
+	position: absolute;
+	bottom: 3%;
+	right: 38.7%;
+	height: 7%;
+	width: 3%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door13-enter{
+	position: absolute;
+	bottom: 3%;
+	right: 49.7%;
+	height: 7%;
+	width: 3%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door14-enter{
+	position: absolute;
+	bottom: 3%;
+	right: 63%;
+	height: 7%;
+	width: 3%;
+	background:rgba(255, 0, 0, 0.753);
+}
+.door15-enter{
+	position: absolute;
+	bottom: 3%;
+	right: 75%;
+	height: 7%;
+	width: 3%;
+	background: rgba(255, 0, 0, 0.753);
+}
+.door16-enter{
+	position: absolute;
+	bottom: 16%;
+	right: 82%;
+	height: 7%;
+	width: 3%;
+	background: rgba(255, 0, 0, 0.753);
+}
+
+@-webkit-keyframes flash {
+  0%, 49% {
+    background-color:  rgba(255, 255, 0, 0.76);
+    
+  }
+  10%, 100% {
+    background-color: rgba(255, 0, 0, 0.753); 
+    
+  }
 }
