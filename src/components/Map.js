@@ -75,7 +75,7 @@ export default class Map extends Component {
 	}
 	componentDidMount(){
 		//this.setState({room:this.props.room})
-		
+		this.renderRoom()
 		//this.scrollToBottom();
 	}
 	componentDidUpdate() {

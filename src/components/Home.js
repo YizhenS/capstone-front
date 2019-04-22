@@ -24,15 +24,7 @@ class Home extends Component {
 	}
 
 	
-	setRoom(){
-		console.log(this.state.rawData)
-	}
-
-
-	getUser() {
-		console.log(this.props.auth)
-
-	}
+	
 	addConsole() {
 		this.setState({ console: this.state.console.concat[Date()] })
 	}
@@ -46,8 +38,8 @@ class Home extends Component {
 	}
 
 	componentWillMount() {
-		console.log(this.state.console)
-		this.addConsole()
+		//console.log(this.state.console)
+		//this.addConsole()
 
 		this.setState({
 			room: {
@@ -61,13 +53,13 @@ class Home extends Component {
 		this.setState({ console: this.state.console.concat[Date()] })
 	}
 	componentWillMount() {
-		this.fetchData();
+		//this.fetchData();
 		//console.log(this.state)
 	}
 	componentDidMount(){
-		console.log(this.setRoom())
-		this.interval = setInterval(() => this.fetchData(), 1000);
-	
+		//console.log(this.setRoom())
+		//this.interval = setInterval(() => this.fetchData(), 10000);
+		//this.interval = setInterval(() => window.location.reload(),50000)
 	}
 
 	render() {
@@ -76,7 +68,7 @@ class Home extends Component {
 		return (
 
 			<div>
-				{!this.props.auth.user.name ? <div><Map room={this.state.rawData} /> <Console room={this.state.rawData} /></div> : <About />}
+				<About/>
 			</div>
 		);
 	}

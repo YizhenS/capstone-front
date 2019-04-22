@@ -20,7 +20,7 @@ export default class Console extends Component {
 
 	changeRoomState(){
 		//console.log("change room state is running" + Date())
-		console.log(this.state)
+		//console.log(this.state)
 		var data = this.props.room;
 		if(data == null){
 			return
@@ -100,9 +100,9 @@ export default class Console extends Component {
 	addOutput(){
 		this.changeRoomState()
 		//console.log(this.state)
-		console.log(this.state.output.length)
+		//console.log(this.state.output.length)
 		if(this.state.output.length>30){
-			console.log("here")
+			//console.log("here")
 			this.setState({
 				output: []
 			})
@@ -114,7 +114,7 @@ export default class Console extends Component {
 		// this.setState({
 		// 	Last: this.props.room
 		// })
-		console.log("add out put ran")
+		//console.log("add out put ran")
 		var safe = "Room "
 		var danger = "Room "
 		var warning = "Room "
